@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { LayoutComponent } from './components/layouts/layout/layout.component';
@@ -15,6 +16,9 @@ import { AuthComponent } from './components/pages/auth/auth.component';
 import { LoginComponent } from './components/pages/auth/login/login.component';
 import { LogoutComponent } from './components/pages/auth/logout/logout.component';
 import { RegisterComponent } from './components/pages/auth/register/register.component';
+
+
+import { DemoMaterialModule } from 'src/material-module';
 
 @NgModule({
   declarations: [
@@ -34,8 +38,11 @@ import { RegisterComponent } from './components/pages/auth/register/register.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    DemoMaterialModule,
+   
+      ],
   providers: [],
   bootstrap: [LayoutComponent]
 })

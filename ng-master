@@ -1,0 +1,4 @@
+ng new client --routing
+ng g c components/layout --skipTests
+
+npm i --save @angilar/material @angilar/cdk

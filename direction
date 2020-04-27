@@ -1,0 +1,32 @@
+ 1. server : mysql
+ 2. client : angular
+ 3. db - books
+ items: 
+ bookID, title, author, price, genres, image
+
+ users:
+ userID, name, phone, email, password
+
+access:
+userID, bookID
+
+layout:
+header: logo + menu + shopping cart
+sidebar - categories + shopping cart
+main
+footer
+
+material ui
+
+
+server
+-----
+INSERT INTO `items` (`bookID`, `title`, `author`, `price`, `genres`, `image`) VALUES (NULL, 'demo book', 'demo author', '500', 'Horror, Sci fi', '1.jpg');
+
+INSERT INTO `users` (`userID`, `name`, `phone`, `email`, `password`) VALUES (NULL, 'john', '050-9382456', 'anguru@gmail.com', '1234');
+
+INSERT INTO `members` (`userID`, `bookID`) VALUES ('1', '1');
+
+ 
+
+
